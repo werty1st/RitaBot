@@ -131,7 +131,7 @@ module.exports = function run (lang, single = false)
 
       }
       const langISO = getLangISO(language.trim());
-      if (translate.languages.isSupported(langISO))
+      //if (translate.languages.isSupported(langISO))
       {
 
          if (!langs.unique.includes(langISO))
@@ -148,12 +148,12 @@ module.exports = function run (lang, single = false)
 
       }
 
-      else
-      {
+      // else
+      // {
 
-         langs.invalid.push(language.trim());
+      //    langs.invalid.push(language.trim());
 
-      }
+      // }
 
    });
 
